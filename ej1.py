@@ -20,4 +20,3 @@ for elfo in cal_elfos:
         mayor=elfo
 print (mayor)
 
-#print(cal_elfos)
