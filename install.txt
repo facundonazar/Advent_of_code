@@ -1,0 +1,5 @@
+1. install venv               | $ pip install virtualenv
+2. crear venv                 | $ virtualenv nombre-del-venv
+3. entrar venv                | $ pip source venv/bin/activate
+4. installar dependecias      | $ pip install tk
+

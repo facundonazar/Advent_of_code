@@ -3,11 +3,13 @@ guide=archivo.read()
 
 s_guide=guide.splitlines()
 
-#print(s_guide)
+print(s_guide)
 
 split_s_guide=[]
 for round in s_guide:
     split_s_guide.append(round.split())
+
+#print(split_s_guide)
 
 score=0
 for round in split_s_guide:
@@ -39,5 +41,5 @@ for round in split_s_guide:
     elif round[0] == 'C' and round[1] == 'Y':
         score += 6
 
-print (score)
-print(len(split_s_guide))
+#print (score)
+#print(len(split_s_guide))
