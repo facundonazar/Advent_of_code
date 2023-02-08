@@ -8,7 +8,7 @@ import customtkinter
 import datetime
 import db
 from lib import isValid
-from user import User
+#from user import User
 
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")

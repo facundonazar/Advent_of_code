@@ -1,51 +1,3 @@
-import tkinter as tk
-from tkinter import ttk
-from tkinter.messagebox import askyesno
-
-import customtkinter
-
-#import datetime
-#import db
-
-#from lib import isValid
-#from user import User
-
-from time import sleep
-import pandas as pd
-#---------------------- Menu Superior -------------------------
-
-class App(customtkinter.CTk):
-
-    def __init__(self):        
-        super().__init__()        
-
-        #configura ventana
-        self.title("User admin interface demo")
-        self.geometry(f"{1100}x{580}")
-        
-        #configura grid 4x4
-        self.grid_columnconfigure(1, weight=1)
-        self.grid_columnconfigure((2,3), weight=0)
-        self.grid_rowconfigure((0,1,2), weight=1)
-        
-        #crea y configura panel lateral(frame)
-        self.sidebar_frame= customtkinter.CTkFrame(self, width=140, corner_radius=0)
-        self.sidebar_frame.grid(row=0,column=0,rowspan=4,sticky="nsew")
-        self.sidebar_frame.grid_rowconfigure(4,weight=1)
-
-        #crea y configura label user
-        self.logo_label=customtkinter.CTkLabel(self.sidebar_frame, text="User admin", font=customtkinter.CTkFont(size=20, weight="bold"))
-        self.logo_label.grid(row=0, column=0, padx=20, pady=(20,10))
-
-        #boton "Ver Usuarios" en panel lateral
-        self.boton_ver_usuarios=customtkinter.CTkButton(self.sidebar_frame, text="Ver_usuarios")
-        self.boton_ver_usuarios.grid(row=1,column=0, padx=20, pady=10)
-
-        #boton "Agregar Usuarios" en panel lateral
-        self.boton_agr_usuarios=customtkinter.CTkButton(self.sidebar_frame, text="Agregar_usuarios")
-        self.boton_agr_usuarios.grid(row=2,column=0, padx=20, pady=10)
-
-        #
 
         ventana=Tk()
 
@@ -121,9 +73,3 @@ class App(customtkinter.CTk):
         botonBorrar.grid(row=0, column=3, sticky=E, padx=10, pady=10)
 
         ventana.mainloop()
-
-#---------------------- Funciones ------------------------------
-
-class Conexion():
-    
-    def __init__(self):
